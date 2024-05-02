@@ -1,0 +1,30 @@
+.word-list {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.word-item {
+    margin-bottom: 10px;
+    border-style: solid;
+    width: 300px;
+}
+
+.word-item:first-child {
+    color: blue; /* First word is blue */
+}
+
+.word-item:nth-child(2) {
+    color: green; /* Second word is green */
+}
+
+.word-item:nth-child(3) {
+    color: red; /* Third word is red */
+}
+
+.word-item:nth-child(4) {
+    color: orange; /* Fourth word is orange */
+}
+
+.word-item:nth-child(5) {
+    color: purple; /* Fifth word is purple */
+}
