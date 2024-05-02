@@ -4,7 +4,7 @@ function generateRandomWords() {
         .then(response => response.text())
         .then(data => {
             // Split the text into an array of words
-            const wordList = data.trim().split('\n');
+            const wordList = data.trim().toUpperCase().split('\n');
 
             // Shuffle the array to get random words
             const shuffledWords = shuffleArray(wordList);
@@ -15,7 +15,12 @@ function generateRandomWords() {
             // Display random words on the page
             const randomWordsContainer = document.getElementById("randomWords");
             randomWordsContainer.innerHTML = randomWords.map((word, index) => {
-                return `<p class="word-item">${index + 1}: <span class="word">${word}</span></p>`;
+                return `
+                    <div class="word-box">
+                        <div class="word-number">Word ${index + 1}:</div>
+                        <div class="word-item">${word}</div>
+                    </div>
+                `;
             }).join("");
         })
         .catch(error => {
