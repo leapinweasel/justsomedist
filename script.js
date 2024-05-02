@@ -15,10 +15,12 @@ function generateRandomWords() {
             // Display random words on the page
             const randomWordsContainer = document.getElementById("randomWords");
             randomWordsContainer.innerHTML = randomWords.map((word, index) => {
+                // Define class for each word-box based on index
+                const wordClass = `word-item word-color-${index + 1}`;
                 return `
                     <div class="word-box">
                         <div class="word-number">Word ${index + 1}:</div>
-                        <div class="word-item">${word}</div>
+                        <div class="${wordClass}">${word}</div>
                     </div>
                 `;
             }).join("");
@@ -26,13 +28,4 @@ function generateRandomWords() {
         .catch(error => {
             console.error('Error fetching word list:', error);
         });
-}
-
-// Function to shuffle an array
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
 }

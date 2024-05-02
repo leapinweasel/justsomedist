@@ -24,22 +24,9 @@
     margin-left: 10px; /* Add some spacing between number and word */
 }
 
-.word-item:first-child {
-    color: blue; /* First word is blue */
-}
-
-.word-item:nth-child(2) {
-    color: green; /* Second word is green */
-}
-
-.word-item:nth-child(3) {
-    color: red; /* Third word is red */
-}
-
-.word-item:nth-child(4) {
-    color: orange; /* Fourth word is orange */
-}
-
-.word-item:nth-child(5) {
-    color: purple; /* Fifth word is purple */
-}
+/* Apply colors to word-items based on index */
+.word-color-1 { color: blue; }
+.word-color-2 { color: green; }
+.word-color-3 { color: red; }
+.word-color-4 { color: orange; }
+.word-color-5 { color: purple; }
