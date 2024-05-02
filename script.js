@@ -19,7 +19,7 @@ function generateRandomWords() {
                 const wordClass = `word-item word-color-${index + 1}`;
                 return `
                     <div class="word-box">
-                        <div class="word-number">Word ${index + 1}:</div>
+                        <div class="word-number">${index + 1}:</div>
                         <div class="${wordClass}">${word}</div>
                     </div>
                 `;
