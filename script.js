@@ -37,9 +37,9 @@ function displayRandomWords(wordListData) {
         // Define class for each word-box based on index
         const wordClass = `word-item word-color-${index + 1}`;
         return `
-            <div class="word-box">
+            <div>
                 <div class="word-number">${index + 1}:</div>
-                <div class="${wordClass}">${word}</div>
+                <div class="word-box ${wordClass}">${word}</div>
             </div>
         `;
     }).join("");

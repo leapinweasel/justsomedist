@@ -13,12 +13,12 @@
 }
 
 .word-box {
-    display: flex;
-    align-items: center;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 4px double #ccc;
     border-radius: 5px;
     margin-bottom: 10px;
+    font-family: Arial, sans-serif;    
+    font-weight: bold;
 }
 
 .word-number {
@@ -27,14 +27,15 @@
 }
 
 .word-item {
-    flex: 1; /* Take remaining space */
     text-align: center; /* Center align the word */
-    margin-left: 10px; /* Add some spacing between number and word */
+    margin-left: 40px; /* Add some spacing between number and word */
+    margin-right: 40px; 
 }
 
 /* Apply colors to word-items based on index */
-.word-color-1 { color: blue; }
-.word-color-2 { color: green; }
-.word-color-3 { color: red; }
-.word-color-4 { color: orange; }
-.word-color-5 { color: purple; }
+.word-color-1 { color: black; border-color: blue;}
+.word-color-2 { color: black; border-color: green;}
+.word-color-3 { color: black; border-color: red;}
+.word-color-4 { color: black; border-color: orange;}
+.word-color-5 { color: black; border-color: yellow;
+}
