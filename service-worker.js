@@ -1,10 +1,10 @@
-const CACHE_NAME = 'just-some-words-cache-v1';
+const CACHE_NAME = 'just-some-words-cache-v2';
 const urlsToCache = [
     '/',
     'index.html',
     'styles.css',
     'script.js',
-    'wordlist.txt'
+    'assets/wordlist.txt'
 ];
 
 self.addEventListener('install', event => {
