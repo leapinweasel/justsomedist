@@ -6,7 +6,7 @@ function generateRandomWords() {
         displayRandomWords(cachedWordList);
     } else {
         // If not cached, fetch the word list from the text file
-        fetch('wordlist.txt')
+        fetch('assets/wordlist.txt')
             .then(response => response.text())
             .then(data => {
                 // Cache the word list in local storage
