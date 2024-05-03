@@ -58,6 +58,21 @@ function shuffleArray(array) {
 function forceRefreshWordList() {
     // Remove the cached word list from local storage
     localStorage.removeItem('wordList');
-    // Call generateRandomWords to fetch and display the updated word list
-    generateRandomWords();
+
+    // Clear the cache stored by the service worker
+    if ('caches' in window) {
+        caches.keys().then(cacheNames => {
+            cacheNames.forEach(cacheName => {
+                if (cacheName.startsWith('just-some-words-cache')) {
+                    caches.delete(cacheName);
+                }
+            });
+        });
+    }
+
+
+    const randomWordsContainer = document.getElementById("randomWords");
+    randomWordsContainer.innerHTML = "<br></br>";
+
 }
+
