@@ -23,7 +23,7 @@ function generateRandomWords() {
 function displayRandomWords(wordListData) {
 
     // Split the text into an array of words
-    const wordList = data.trim().toUpperCase().split('\n');
+    const wordList = wordListData.trim().toUpperCase().split('\n');
 
     // Shuffle the array to get random words
     const shuffledWords = shuffleArray(wordList);

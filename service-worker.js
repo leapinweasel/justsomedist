@@ -1,4 +1,4 @@
-const CACHE_NAME = 'just-some-words-cache-v2';
+const CACHE_NAME = 'just-some-words-cache-v3';
 const urlsToCache = [
     '/',
     'index.html',
