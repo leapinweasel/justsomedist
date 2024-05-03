@@ -13,27 +13,30 @@
 }
 
 .word-box {
-    padding: 10px;
-    border: 4px double #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    font-family: Arial, sans-serif;    
-    font-weight: bold;
+    display: flex;
 }
 
 .word-number {
-    flex: 0 0 50px; /* Fixed width for the number */
+    flex: 0 0 auto; /* Fixed width for the number */
     text-align: left; /* Left align the number */
+    padding: 10px;
+
 }
 
 .word-item {
+    flex: 1;
     text-align: center; /* Center align the word */
     margin-left: 40px; /* Add some spacing between number and word */
     margin-right: 40px; 
+    border: 4px double #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+
 }
 
 /* Apply colors to word-items based on index */
-.word-color-1 { color: black; border-color: blue;}
+.word-color-1 { color: black; border-color: blue; background-color: rgb(178, 224, 224);}
 .word-color-2 { color: black; border-color: green;}
 .word-color-3 { color: black; border-color: red;}
 .word-color-4 { color: black; border-color: orange;}
