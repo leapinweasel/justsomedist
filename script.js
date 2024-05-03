@@ -72,7 +72,10 @@ function forceRefreshWordList() {
 
 
     const randomWordsContainer = document.getElementById("randomWords");
-    randomWordsContainer.innerHTML = "<br></br>";
+    randomWordsContainer.innerHTML = "";
+
+    // Refresh the page
+    location.reload(true); // Pass true to force a reload from the server, bypassing the cache
 
 }
 
