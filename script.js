@@ -39,7 +39,7 @@ function displayRandomWords(wordListData) {
         return `
             <div class="word-box">
                 <div class="word-number">${index + 1}:</div>
-                <div class="word-box ${wordClass}">${word}</div>
+                <div class="${wordClass}">${word}</div>
             </div>
         `;
     }).join("");
