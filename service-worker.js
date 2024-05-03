@@ -1,4 +1,4 @@
-const CACHE_NAME = 'just-some-words-cache-v3';
+const CACHE_NAME = 'just-some-words-cache-v4';
 const urlsToCache = [
     '/',
     'index.html',
@@ -20,6 +20,7 @@ self.addEventListener('fetch', event => {
     event.respondWith(
         caches.match(event.request)
             .then(response => {
+                console.log("load from cache. " + event.request);
                 // Cache hit - return response
                 if (response) {
                     return response;
