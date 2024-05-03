@@ -63,7 +63,7 @@ function forceRefreshWordList() {
     if ('caches' in window) {
         caches.keys().then(cacheNames => {
             cacheNames.forEach(cacheName => {
-                if (cacheName.startsWith('just-some-words-cache') && cacheName.includes('/myapp/')) {
+                if (cacheName.startsWith('just-some-words-cache') && cacheName.includes('/justsomedist/')) {
                     caches.delete(cacheName);
                 }
             });
